@@ -30,7 +30,7 @@ class ChessScreen extends StatelessWidget {
           Expanded(
             child: Center(
               child: Image.asset(
-                'assets/echiquier.jpg',
+                'assets/echiquier_crop.jpg',
                 width: MediaQuery.of(context).size.width * 0.9,
               ),
             ),
