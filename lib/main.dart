@@ -26,27 +26,32 @@ class ChessScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _buildPlayerName("Joueur 1"),
+          _buildPlayerName("Joueur 1", true),
           Expanded(
             child: Center(
               child: Image.asset(
                 'assets/echiquier_crop.jpg',
-                width: MediaQuery.of(context).size.width * 0.9,
+                width: MediaQuery.of(context).size.width,
+                fit: BoxFit.cover,
               ),
             ),
           ),
-          _buildPlayerName("Joueur 2"),
+          _buildPlayerName("Joueur 2", false),
         ],
       ),
     );
   }
 
-  Widget _buildPlayerName(String name) {
+  Widget _buildPlayerName(String name, bool flip) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: Text(
-        name,
-        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      child: Transform(
+        alignment: Alignment.center,
+        transform: flip ? Matrix4.rotationX(3.1416) * Matrix4.rotationY(3.1416) : Matrix4.identity(),
+        child: Text(
+          name,
+          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
