@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # chess_insa
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# ChessInsa
+super appli d'echecs
+>>>>>>> 0434d7c08fbec11100ed411a5da9ec7ff6fd5f46
