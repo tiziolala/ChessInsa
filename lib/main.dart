@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Chess',
       debugShowCheckedModeBanner: false,
       home: const ChessScreen(),
     );
@@ -56,3 +57,4 @@ class ChessScreen extends StatelessWidget {
     );
   }
 }
+
