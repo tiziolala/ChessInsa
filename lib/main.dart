@@ -22,7 +22,7 @@ class ChessScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -50,7 +50,7 @@ class ChessScreen extends StatelessWidget {
         transform: flip ? Matrix4.rotationX(3.1416) * Matrix4.rotationY(3.1416) : Matrix4.identity(),
         child: Text(
           name,
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 255, 255, 255)),
         ),
       ),
     );

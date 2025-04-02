@@ -51,4 +51,9 @@ class GameTimer{
   void setInitial(int t){
     _initial = t;
   }
+
+  // Retourne le temps restant
+  int getTime() {
+    return _seconds;
+  }
 }
