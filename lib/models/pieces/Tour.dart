@@ -1,4 +1,4 @@
-import 'package:chess_insa/Piece.dart';
+import 'package:chess_insa/models/Piece.dart';
 
 
 class Tour extends Piece{
